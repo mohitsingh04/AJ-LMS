@@ -1,11 +1,11 @@
 import React from 'react';
 
-const StatCard = ({ 
-  title, 
-  value, 
-  icon: Icon, 
-  trend, 
-  color = 'blue' 
+const StatCard = ({
+  title,
+  value,
+  icon: Icon,
+  trend,
+  color = 'blue'
 }) => {
   const colorClasses = {
     blue: 'bg-blue-50 text-blue-600',
@@ -16,11 +16,11 @@ const StatCard = ({
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+    <div className="bg-white rounded-lg shadow-md border border-gray-200 p-6">
       <div className="flex items-center justify-between">
         <div className="flex-1">
-          <p className="text-sm font-medium text-gray-600">{title}</p>
-          <p className="text-2xl font-bold text-gray-900 mt-1">{value}</p>
+          <p className="text-sm font-medium text-gray-600 ">{title}</p>
+          <p className="text-2xl font-bold text-gray-900 mt-1 font-poppins">{value}</p>
           {trend && (
             <div className="flex items-center mt-2">
               <span className={`text-sm font-medium ${trend.isPositive ? 'text-green-600' : 'text-red-600'}`}>
